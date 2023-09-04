@@ -234,9 +234,7 @@ ul {
 .header-contacts a {
   color: var(--text);
   text-decoration: none;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
 }
 
 .header-contacts a:hover,
@@ -1116,6 +1114,8 @@ a.social-media-logo-border:focus .social-media-logo {
   .header-contacts {
     display: block;
     margin: 10px 0;
+    line-height: 1.17;
+    font-size: 12px;
   }
 
   .header-contacts li {
@@ -1201,6 +1201,7 @@ a.social-media-logo-border:focus .social-media-logo {
     display: flex;
     gap: 40px;
     margin: 24px 0px;
+    font-size: 16px;
   }
 
   .icons-background {
@@ -1236,6 +1237,12 @@ a.social-media-logo-border:focus .social-media-logo {
     margin-bottom: 8px;
     letter-spacing: 0.03em;
     text-transform: capitalize;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
   }
 
   .what-we-do-visual {
