@@ -7,12 +7,13 @@
 }
 
 .container {
+  min-width: 320px;
   max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section {
@@ -63,21 +64,19 @@ ul {
   stroke: var(--dark);
 }
 
-.header-mobile svg {
-  margin-left: 249px;
-}
-
 .logo {
   color: var(--primary-brand);
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 24px;
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -257,9 +256,6 @@ ul {
 }
 
 .intro {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
   color: var(--white-background);
   background-color: var(--hero-background);
   text-align: center;
@@ -268,7 +264,8 @@ ul {
   background-image: linear-gradient(to right, #2f303a70, #2f303a70),
     url(../images/intro-background.jpg);
   background-size: cover;
-  height: 600px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .intro button {
@@ -280,7 +277,7 @@ ul {
   cursor: pointer;
   letter-spacing: 0.06em;
   padding: 16px 32px;
-  margin: 48px 0px 68px 0px;
+  margin: 48px 0px 0px 0px;
   border-radius: 4px;
   border-color: var(--primary-brand);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -330,11 +327,11 @@ ul {
 h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.07em;
-  padding: 188px 0px 0px 0px;
-  max-width: 550px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.045em;
+  /* padding: 188px 0px 0px 0px; */
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -363,7 +360,6 @@ h4 {
 }
 
 .logotype-footer {
-  padding-left: 76.5px;
   font-weight: 800;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -376,7 +372,6 @@ h4 {
 
 .footer-text {
   display: block;
-  padding-top: 97.5px;
 }
 
 footer {
@@ -386,6 +381,7 @@ footer {
   line-height: 1.5;
   color: var(--light);
   padding-bottom: 96px;
+  padding-top: 96px;
   display: flex;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -417,7 +413,6 @@ footer {
   letter-spacing: 0.03em;
   color: var(--light);
   margin-bottom: 16px;
-  padding-left: 86px;
 }
 
 .join-us {
@@ -439,7 +434,6 @@ footer > .container {
   fill: var(--light);
   display: flex;
   gap: 16px;
-  padding-left: 30px;
 }
 
 .social-media-logo-footer a {
@@ -524,7 +518,7 @@ footer > .container {
   gap: 72px;
   list-style-type: none;
   min-width: 320px;
-  width: 396px;
+  /* width: 396px; */
 }
 
 .our-team-members {
@@ -826,13 +820,16 @@ a.social-media-logo-border:focus .social-media-logo {
 }
 
 .subscription {
+  width: 100%;
   margin-top: 72px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   display: flex;
 }
 
 .subscribe {
-  width: 398px;
+  /* min-width: 320px;
+  max-width: 398px; */
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -842,7 +839,6 @@ a.social-media-logo-border:focus .social-media-logo {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 161.5px;
 }
 
 .subscribe-icon {
@@ -850,7 +846,8 @@ a.social-media-logo-border:focus .social-media-logo {
 }
 
 .email-box {
-  width: 398px;
+  width: 100%;
+  min-width: 288px;
   height: 40px;
   margin-top: 16px;
   padding-left: 16px;
@@ -871,9 +868,7 @@ a.social-media-logo-border:focus .social-media-logo {
 }
 
 .input-box-and-button {
-  max-width: 398px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .sub-button {
@@ -892,7 +887,6 @@ a.social-media-logo-border:focus .social-media-logo {
   margin-top: 16px;
   display: inline-flex;
   gap: 16px;
-  margin-left: 116.5px;
 }
 
 .sub-button:hover,
@@ -934,7 +928,6 @@ a.social-media-logo-border:focus .social-media-logo {
   background-color: transparent;
   border: none;
   outline: transparent;
-  width: 100%;
 }
 
 .input-wrapper {
@@ -1089,7 +1082,8 @@ a.social-media-logo-border:focus .social-media-logo {
   }
 
   .client-list {
-    width: 396px;
+    min-width: 320px;
+    max-width: 396px;
     row-gap: 72px;
     column-gap: 16px;
   }
@@ -1109,6 +1103,30 @@ a.social-media-logo-border:focus .social-media-logo {
   .logotype-footer {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sub-button {
+    position: relative;
+    top: 72px;
+    left: -230px;
+  }
+
+  .logotype-footer {
+    padding-left: 76.5px;
+  }
+
+  .footer-socials {
+    padding-left: 86px;
+  }
+
+  .join-us-socials {
+    padding-left: 30px;
+  }
+
+  .sub-desc {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -1136,6 +1154,17 @@ a.social-media-logo-border:focus .social-media-logo {
   .what-we-do-list {
     flex-wrap: wrap;
     width: 768px;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.07em;
+    /* padding: 188px 0px 0px 0px; */
+    max-width: 550px;
+    margin: 0 auto;
   }
 
   .what-we-do-list li {
@@ -1173,10 +1202,14 @@ a.social-media-logo-border:focus .social-media-logo {
   .client-list li {
     width: 168px;
   }
+
+  .email-box {
+    width: 264px;
+  }
 }
 
 /* INVISIBLE ON DESKTOP */
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 1199px) {
   .what-we-do-pics {
     display: none;
   }
@@ -1213,6 +1246,11 @@ a.social-media-logo-border:focus .social-media-logo {
     gap: 40px;
     margin: 24px 0px;
     font-size: 16px;
+  }
+
+  .intro {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 
   .icons-background {
